@@ -1,0 +1,37 @@
+// VerilogA for eece571H_project, slice_enable_gen, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module slice_enable_gen(inout gnd, output [11:0] enable_out);
+  electrical gnd;
+  electrical [11:0] enable_out;
+
+  parameter real vout = 1.0;
+  parameter integer main_cursor_slices = 9;
+  parameter integer post_cursor_slices = 3;
+  parameter integer main_cursor_on = 6;
+  parameter integer post_cursor_on = 2;
+
+  genvar i;
+
+  analog begin
+   for (i = 0;i < main_cursor_slices; i = i+1) begin
+     if (i < main_cursor_on) begin
+        V(enable_out[i],gnd) <+ vout;
+     end else begin
+        V(enable_out[i],gnd) <+ 0;
+     end
+   end
+
+   for (i = main_cursor_slices;i < main_cursor_slices+post_cursor_slices; i = i+1) begin
+     if (i < main_cursor_slices+post_cursor_on) begin
+        V(enable_out[i],gnd) <+ vout;
+     end else begin
+        V(enable_out[i],gnd) <+ 0;
+     end
+   end
+  end
+
+
+endmodule
