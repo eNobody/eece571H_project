@@ -1,0 +1,35 @@
+// VerilogA for eece571H_project, prbs15, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module prbs15(input Vdd, input clk, input gnd, output data);
+  electrical Vdd;
+  electrical clk;
+  electrical gnd;
+  electrical data;
+
+  parameter integer seed = 1;
+
+  integer i, next;
+  integer shift_reg [14:0];
+
+  analog begin
+    @(initial_step) begin
+      for (i = 0; i < 15; i = i+1) begin
+        shift_reg[i] = (seed >> i) & 1;
+      end
+    end
+
+    @(cross(V(clk,gnd)-V(Vdd,gnd)/2, +1)) begin
+      next = shift_reg[14] ^ shift_reg[13];
+      for (i = 14; i >=1; i = i-1) begin
+        shift_reg[i] = shift_reg[i-1];
+      end
+      shift_reg[0] = next;
+    end
+     V(data,gnd) <+ shift_reg[14]*V(Vdd,gnd);
+
+  end
+
+endmodule
