@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      b7h0b
 HostName                       ssh-soc
-ProcessIdentifier              14332
-ProcessCreationTime_UTC        1447802586
-ProcessCreationTime_Readable   Tue Nov 17 15:23:06 2015 PST
+ProcessIdentifier              38821
+ProcessCreationTime_UTC        1447821383
+ProcessCreationTime_Readable   Tue Nov 17 20:36:23 2015 PST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
 FilePathUsedToEditLock         /ubc/ece/home/ugrads/b/b7h0b/cadence/eece571H_project/tb_alt_data/schematic/sch.oa.cdslck
-TimeEditLocked                 Tue Nov 17 15:25:26 2015 PST
+TimeEditLocked                 Tue Nov 17 22:40:22 2015 PST
