@@ -1,0 +1,56 @@
+// VerilogA for eece571H_project, code_gen, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module code_genn(inout Vdd, input clk, inout gnd, output [5:0] code_out,  output [5:0] code_out_b);
+  electrical Vdd;
+  electrical clk;
+  electrical gnd;
+  electrical [5:0] code_out;
+  electrical [5:0] code_out_b;
+
+  parameter real vout = 1.0;
+  parameter integer code = 32;
+  parameter sweep_inc_cycles = 0;
+
+  integer cycle = -1;
+  integer out_val = 0;
+
+  genvar i;
+
+  analog begin
+   if (sweep_inc_cycles == 0) begin //normal operation mode
+     for (i = 0;i < 6; i = i+1) begin
+       if (code & (1 << i)) begin
+          V(code_out[i],gnd) <+ vout;
+          V(code_out_b[i],gnd) <+ 0;
+       end else begin
+          V(code_out[i],gnd) <+ 0;
+          V(code_out_b[i],gnd) <+ vout;
+       end
+     end
+   end
+   else begin //sweep mode
+      @(cross(V(clk,gnd)-V(Vdd,gnd)/2, +1)) begin
+        cycle = cycle+1;
+        if (cycle == sweep_inc_cycles) begin
+          cycle = 0;
+          out_val = out_val+1;
+        end
+      end
+     
+      for (i = 0;i < 6; i = i+1) begin
+        if (out_val & (1 << i))  begin
+          V(code_out[i],gnd) <+ vout;
+          V(code_out_b[i],gnd) <+ 0;
+       end else begin
+          V(code_out[i],gnd) <+ 0;
+          V(code_out_b[i],gnd) <+ vout;
+       end
+      end
+   end
+  end
+
+
+endmodule
