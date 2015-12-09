@@ -1,0 +1,85 @@
+\documentclass[12pt,journal,compsoc,onecolumn]{IEEEtran}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{caption}
+
+\providecommand{\PSforPDF}[1]{#1}
+\newcommand{\um} {$\mu$m}
+
+
+\newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
+pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
+colorlinks=true,linkcolor={black},citecolor={black},pagecolor={black},
+urlcolor={black},
+pdftitle={Third interim report},%<!CHANGE!
+pdfsubject={Typesetting},%<!CHANGE!
+pdfauthor={Carsten Bruns \& Jakob Toft},%<!CHANGE!
+pdfkeywords={High-speed communication, Voltage-mode driver, Low-power 10GB/s}}%<^!CHANGE!
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+\usepackage[]{units}
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+\usepackage{epstopdf}
+
+\usepackage{pgfplots} 
+\usepgfplotslibrary{external}
+\tikzexternalize
+
+\usepackage{float}
+
+\begin{document}
+%
+% paper title
+% can use linebreaks \\ within to get better formatting as desired
+\title{Design, Analysis and Simulation of an I/O Link\\Second interim report}
+
+\author{Carsten Bruns
+        \& Jakob Toft% <-this % stops a space
+
+%\IEEEcompsoctitleabstractindextext{%
+%\begin{abstract}
+%\boldmath
+%The abstract goes here.
+%\end{abstract}
+
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+High-Speed Data Links, Low-Power 10Gb/s link.
+\end{IEEEkeywords}}
+
+
+% make the title area
+\maketitle
+
+\IEEEdisplaynotcompsoctitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+dfk\cite{rajesh2011a} %TODO remove
+%\input{topologies}
+\input{schematics}
+\input{tuning}
+%\input{performance}
+
+
+
+% Can use something like this to put references on a page
+% by themselves when using endfloat and the captionsoff option.
+\ifCLASSOPTIONcaptionsoff
+  \newpage
+\fi
+
+\newpage
+\section{Bibliography}
+\bibliography{biblio}{}
+\bibliographystyle{plain}
+
+
+\end{document}
+
+
