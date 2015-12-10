@@ -3,13 +3,17 @@
 `include "constants.vams"
 `include "disciplines.vams"
 
-module prbs15(input Vdd, input clk, input gnd, output data);
+module prbs15(input Vdd, input clk, input gnd, output data, output data_b);
   electrical Vdd;
   electrical clk;
   electrical gnd;
   electrical data;
+  electrical data_b;
+
 
   parameter integer seed = 1;
+  parameter real V1 = 1;
+  parameter real V2 = 0;
 
   integer i, next;
   integer shift_reg [14:0];
@@ -17,7 +21,7 @@ module prbs15(input Vdd, input clk, input gnd, output data);
   analog begin
     @(initial_step) begin
       for (i = 0; i < 15; i = i+1) begin
-        shift_reg[i] = (seed << i) & 1;
+        shift_reg[i] = (seed >> i) & 1;
       end
     end
 
@@ -28,7 +32,13 @@ module prbs15(input Vdd, input clk, input gnd, output data);
       end
       shift_reg[0] = next;
     end
-     V(data,gnd) <+ shift_reg[14]*V(Vdd,gnd);
+    if ( shift_reg[14] == 1) begin
+      V(data,gnd) <+ V1;
+      V(data_b,gnd) <+ V2;
+    end else begin
+      V(data,gnd) <+ 2;
+      V(data_b,gnd) <+V1;;
+    end
 
   end
 
