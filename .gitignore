@@ -1,7 +1,7 @@
-report_2.pdf
-report_2.aux
-report_2.log
-report_2.blg
+report_*.pdf
+report_*.aux
+report_*.log
+report_*.blg
 *.backup
 *.auxlock
 *.md5
