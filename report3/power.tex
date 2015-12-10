@@ -1,5 +1,18 @@
-\section{Performance results}
+\section{Power consumption}
+The power consumption at \unit[10]{Gb/s} PRBS15 data and \unit[1]{V} power supply is shown in table \ref{tab:power_consumption}. The complete receiver consists of two receiver slices, each of them of VOA, strongARM and RS-FlipFlop (see section \ref{sec:rx_schematics}).
 
-\IEEEPARstart{T}{odo} write sth here!
-
-%TODO table with performance/specs
+\begin{table}[H]
+  \centering
+  \begin{tabular}{l|l}
+    component & consumed power\\
+    \hline
+    complete receiver & \unit[2104]{\uW}\\
+    clock buffers & \unit[1814]{\uW}\\
+    receiver slice & \unit[136,3]{\uW}\\
+    VOA & \unit[32,58]{\uW}\\
+    strongARM & \unit[46,07]{\uW}\\
+    RS-FlipFlop & \unit[57,66]{\uW}\\
+  \end{tabular}
+  \caption{Receiver power consumption at \unit[10]{Gb/s} PRBS15 data and \unit[1]{V} power supply}
+  \label{tab:power_consumption}
+\end{table}
