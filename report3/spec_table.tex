@@ -1,5 +1,22 @@
-\section{Performance results}
+\section{Receiver specifications table }
 
-\IEEEPARstart{T}{odo} write sth here!
+In table \ref{tab:specifications} the specifications for the receiver is listed
+
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{l|l|l|l|l}
+    & Min. & Max. & Avg. & Unit \\
+    \hline
+	Termination impedance & 70 & 130 & 100 & $\Omega$\\
+	Impedance resolution & 0.0087 & 2.289 & 0.858 & $\Omega$\\
+	VOA offset & -100 & 100 & 0.0 & mV\\
+	Offset resolution & 2.55 & 8.03 & 3.19 & mV\\
+  \end{tabular}
+  \caption{Partial specification table for the receiver}
+  \label{tab:specifications}
+\end{table}
+
+The resolution of the Impedance and Offset both have a maximum and minimum value in the table, as some steps are smaller than others, due to the tuning not being perfectly linear, the max value do give an indication of the worst case scenario.
 
 %TODO table with performance/specs
