@@ -19,7 +19,7 @@ The receiver is a 2-slice design as each slice is clocked at half-rate of the da
 
 Each slice has a Track and Hold (sometimes called Sample and Hold) switch, depicted as "T/H" in figure \ref{fig:topology}.
 
-For the buffer we chose to implement a VOA-3 amplifier as this should have a lower power penalty than a VOA-1 or VOA-2, and it is simpler than the VOA-4 amplifier.
+For the buffer we chose to implement a VOA-3 differential amplifier as this should have a lower power penalty than a VOA-1 or VOA-2, and it is simpler to size than the VOA-4 amplifier. The VOA-3 differential amplifier utilizes a differential switched load in order to obtain a tunable offset, the tunable load is implemented through using several slices of transistors in the differential load.
 
 For the strong-arm latch we chose to try and do our implementation with only one SAL instead of the two the use in ~\cite{mahony2010a}, in the hope of reducing the power consumption. If the load that the SAL needs to drive is too big to obtain the desired BW, we may need to introduce another SAL or re-think our receiver design.
 
