@@ -36,7 +36,7 @@ module prbs15(input Vdd, input clk, input gnd, output data, output data_b);
       V(data,gnd) <+ V1;
       V(data_b,gnd) <+ V2;
     end else begin
-      V(data,gnd) <+ 2;
+      V(data,gnd) <+ V2;
       V(data_b,gnd) <+V1;;
     end
 
