@@ -1,0 +1,229 @@
+savedComponent = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25)
+(unless tmp1
+tmp1 = make_sevVariableStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "term_res_fix"
+tmp1->expression = "131"
+tmp1->index = 1
+(unless tmp2
+tmp2 = make_sevVariableStruct()
+)
+(unless tmp2
+tmp2 = (ncons nil)
+)
+tmp2->name = "term_nmos"
+tmp2->expression = "20u"
+tmp2->index = 2
+(unless tmp3
+tmp3 = make_sevVariableStruct()
+)
+(unless tmp3
+tmp3 = (ncons nil)
+)
+tmp3->name = "term_res"
+tmp3->expression = "55"
+tmp3->index = 3
+(unless tmp4
+tmp4 = make_sevVariableStruct()
+)
+(unless tmp4
+tmp4 = (ncons nil)
+)
+tmp4->name = "voa_tune"
+tmp4->expression = "10u"
+tmp4->index = 4
+(unless tmp5
+tmp5 = make_sevVariableStruct()
+)
+(unless tmp5
+tmp5 = (ncons nil)
+)
+tmp5->name = "c_test"
+tmp5->expression = "400f"
+tmp5->index = 5
+(unless tmp6
+tmp6 = make_sevVariableStruct()
+)
+(unless tmp6
+tmp6 = (ncons nil)
+)
+tmp6->name = "f_clk"
+tmp6->expression = "5G"
+tmp6->index = 6
+(unless tmp7
+tmp7 = make_sevVariableStruct()
+)
+(unless tmp7
+tmp7 = (ncons nil)
+)
+tmp7->name = "f_data"
+tmp7->expression = "2.5"
+tmp7->index = 7
+(unless tmp8
+tmp8 = make_sevVariableStruct()
+)
+(unless tmp8
+tmp8 = (ncons nil)
+)
+tmp8->name = "nctl"
+tmp8->expression = "320m"
+tmp8->index = 8
+(unless tmp9
+tmp9 = make_sevVariableStruct()
+)
+(unless tmp9
+tmp9 = (ncons nil)
+)
+tmp9->name = "pctl"
+tmp9->expression = "757m"
+tmp9->index = 9
+(unless tmp10
+tmp10 = make_sevVariableStruct()
+)
+(unless tmp10
+tmp10 = (ncons nil)
+)
+tmp10->name = "r_test"
+tmp10->expression = "50"
+tmp10->index = 10
+(unless tmp11
+tmp11 = make_sevVariableStruct()
+)
+(unless tmp11
+tmp11 = (ncons nil)
+)
+tmp11->name = "rs_load_c"
+tmp11->expression = "20f"
+tmp11->index = 11
+(unless tmp12
+tmp12 = make_sevVariableStruct()
+)
+(unless tmp12
+tmp12 = (ncons nil)
+)
+tmp12->name = "rs_nmos_w"
+tmp12->expression = "2u"
+tmp12->index = 12
+(unless tmp13
+tmp13 = make_sevVariableStruct()
+)
+(unless tmp13
+tmp13 = (ncons nil)
+)
+tmp13->name = "rs_pmos_w"
+tmp13->expression = "2u"
+tmp13->index = 13
+(unless tmp14
+tmp14 = make_sevVariableStruct()
+)
+(unless tmp14
+tmp14 = (ncons nil)
+)
+tmp14->name = "sal_clk_nmos_w"
+tmp14->expression = "2u"
+tmp14->index = 14
+(unless tmp15
+tmp15 = make_sevVariableStruct()
+)
+(unless tmp15
+tmp15 = (ncons nil)
+)
+tmp15->name = "sal_inp_nmos_w"
+tmp15->expression = "2u"
+tmp15->index = 15
+(unless tmp16
+tmp16 = make_sevVariableStruct()
+)
+(unless tmp16
+tmp16 = (ncons nil)
+)
+tmp16->name = "sal_inv_nmos_w"
+tmp16->expression = "300n"
+tmp16->index = 16
+(unless tmp17
+tmp17 = make_sevVariableStruct()
+)
+(unless tmp17
+tmp17 = (ncons nil)
+)
+tmp17->name = "sal_reset_pmos_w"
+tmp17->expression = "750n"
+tmp17->index = 17
+(unless tmp18
+tmp18 = make_sevVariableStruct()
+)
+(unless tmp18
+tmp18 = (ncons nil)
+)
+tmp18->name = "sal_short_w"
+tmp18->expression = "1u"
+tmp18->index = 18
+(unless tmp19
+tmp19 = make_sevVariableStruct()
+)
+(unless tmp19
+tmp19 = (ncons nil)
+)
+tmp19->name = "track_and_hold_pmos"
+tmp19->expression = "20u"
+tmp19->index = 19
+(unless tmp20
+tmp20 = make_sevVariableStruct()
+)
+(unless tmp20
+tmp20 = (ncons nil)
+)
+tmp20->name = "v_cm"
+tmp20->expression = "500m"
+tmp20->index = 20
+(unless tmp21
+tmp21 = make_sevVariableStruct()
+)
+(unless tmp21
+tmp21 = (ncons nil)
+)
+tmp21->name = "v_diff"
+tmp21->expression = "50m"
+tmp21->index = 21
+(unless tmp22
+tmp22 = make_sevVariableStruct()
+)
+(unless tmp22
+tmp22 = (ncons nil)
+)
+tmp22->name = "voa_diff_nmos"
+tmp22->expression = "2u"
+tmp22->index = 22
+(unless tmp23
+tmp23 = make_sevVariableStruct()
+)
+(unless tmp23
+tmp23 = (ncons nil)
+)
+tmp23->name = "voa_load_pmos"
+tmp23->expression = "400n"
+tmp23->index = 23
+(unless tmp24
+tmp24 = make_sevVariableStruct()
+)
+(unless tmp24
+tmp24 = (ncons nil)
+)
+tmp24->name = "voa_nmos_source"
+tmp24->expression = "16u"
+tmp24->index = 24
+(unless tmp25
+tmp25 = make_sevVariableStruct()
+)
+(unless tmp25
+tmp25 = (ncons nil)
+)
+tmp25->name = "sal_inv_pmos_w"
+tmp25->expression = "2*sal_inv_nmos_w"
+tmp25->index = 25
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25)
+)
