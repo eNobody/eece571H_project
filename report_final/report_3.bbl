@@ -1,0 +1,35 @@
+\begin{thebibliography}{1}
+
+\bibitem{cressler2007a}
+John~D. Cressler.
+\newblock {Circuits and Applications Using Silicon Heterostructure Devices},
+  2007.
+
+\bibitem{rajesh2011a}
+Rajesh Inti.
+\newblock {\em Highly Digital Power Efficient Techniques for Serial Links}.
+\newblock PhD thesis, Oregon State University, 2012.
+
+\bibitem{designcon2011a}
+Mike Peng~Li Masashi~Shimanouchi and Daniel Chow.
+\newblock {PCI Express� Base Specification Revision 3.0}, 2011.
+
+\bibitem{menolfi2007a}
+Christian Menolfi et~al.
+\newblock { A 16Gb/s Source-Series Terminated Transmitter in 65nm CMOS SOI},
+  2007.
+
+\bibitem{mahony2010a}
+Frank O’Mahony....
+\newblock {A 47 10 Gb/s 1.4 mW/Gb/s Parallel Interface in 45 nm CMOS}, 2010.
+
+\bibitem{palermo2010a}
+Samuel Palermo.
+\newblock {High-Speed Serial I/O Design for ChannelLimited and
+  Power-Constrained Systems}, 2010.
+
+\bibitem{pcie_spec}
+PCI-SIG.
+\newblock {PCI Express� Base Specification Revision 3.0}, 11 2010.
+
+\end{thebibliography}

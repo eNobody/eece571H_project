@@ -1,0 +1,12 @@
+\subsection{Power consumption}
+
+Using the simulation tool in Cadence the following average energy-usage was obtained for the total transmitter:
+
+$$1.786pJ/bit$$
+
+\noindent Which is way too much considering that we should reach something below 1pJ/bit for the transmitter AND receiver.
+Therefore we need first need to see how much a shunt can reduce the power consumption, and eventually we may need to improve the TX driver and the serializer circuitry, first in terms of transistor sizing, and if that doesn't achieve the desired power consumption we may need to re-think the topology.
+
+
+%TODO show power consumption
+%TODO argue that we have to include a shunt resistor to reduce it!
