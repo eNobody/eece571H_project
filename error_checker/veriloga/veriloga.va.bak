@@ -1,0 +1,46 @@
+// VerilogA for eece571H_project, error_checker, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module error_checker(input data0_in, input data1_in, input comp_in ,input clk,input Vdd, input gnd, output data_ser, output error_count);
+ parameter integer error_out_bits = 16;
+
+ electrical data0_in;
+ electrical data1_in;
+ electrical comp_in;
+ electrical Vdd;
+ electrical clk;
+ electrical gnd;
+ electrical data_ser;
+ electrical error_count;
+
+ integer errors = 0;
+ integer mux = 0;
+ integer comp_in_int = 0;
+
+ genvar j;
+
+ analog begin
+    @(cross(V(clk,gnd)-V(Vdd,gnd)/2, +1)) begin
+      mux = V(data0_in,gnd) > V(Vdd,gnd)/2;
+      comp_in_int =  V(comp_in,gnd) > V(Vdd,gnd)/2;
+      if (comp_in_int != mux) begin
+        errors = errors+1;
+      end
+    end
+    @(cross(V(clk,gnd)-V(Vdd,gnd)/2, -1)) begin
+     mux =  V(data1_in,gnd) > V(Vdd,gnd)/2;
+     comp_in_int =  V(comp_in,gnd) > V(Vdd,gnd)/2;
+     if (comp_in_int != mux) begin
+       errors = errors+1;
+     end
+    end
+
+    V(data_ser,gnd) <+  mux ? V(Vdd,gnd) : 0;
+
+ V(error_count,gnd) <+ (errors & 1) ?  V(Vdd,gnd) : 0;
+   
+  end
+
+endmodule

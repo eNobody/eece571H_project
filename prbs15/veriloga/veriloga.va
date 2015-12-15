@@ -33,11 +33,11 @@ module prbs15(input Vdd, input clk, input gnd, output data, output data_b);
       shift_reg[0] = next;
     end
     if ( shift_reg[14] == 1) begin
-      V(data,gnd) <+ V1;
-      V(data_b,gnd) <+ V2;
+      V(data,gnd) <+ V(Vdd,gnd);
+      V(data_b,gnd) <+ 0;
     end else begin
-      V(data,gnd) <+ V2;
-      V(data_b,gnd) <+V1;;
+      V(data,gnd) <+ 0;
+      V(data_b,gnd) <+ V(Vdd,gnd);
     end
 
   end
