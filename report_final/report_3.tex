@@ -6,13 +6,13 @@
 
 \providecommand{\PSforPDF}[1]{#1}
 \newcommand{\um} {$\mu$m}
-
+\newcommand{\uW} {$\mu$W}
 
 \newcommand\MYhyperrefoptions{bookmarks=true,bookmarksnumbered=true,
 pdfpagemode={UseOutlines},plainpages=false,pdfpagelabels=true,
 colorlinks=true,linkcolor={black},citecolor={black},pagecolor={black},
 urlcolor={black},
-pdftitle={Second interim report},%<!CHANGE!
+pdftitle={Third interim report},%<!CHANGE!
 pdfsubject={Typesetting},%<!CHANGE!
 pdfauthor={Carsten Bruns \& Jakob Toft},%<!CHANGE!
 pdfkeywords={High-speed communication, Voltage-mode driver, Low-power 10GB/s}}%<^!CHANGE!
@@ -28,7 +28,7 @@ pdfkeywords={High-speed communication, Voltage-mode driver, Low-power 10GB/s}}%<
 
 \usepackage{pgfplots} 
 \usepgfplotslibrary{external}
-%h\tikzexternalize
+%\tikzexternalize
 
 \usepackage{float}
 
@@ -36,7 +36,7 @@ pdfkeywords={High-speed communication, Voltage-mode driver, Low-power 10GB/s}}%<
 %
 % paper title
 % can use linebreaks \\ within to get better formatting as desired
-\title{Design, Analysis and Simulation of an I/O Link\\Second interim report}
+\title{Design, Analysis and Simulation of an I/O Link\\Final report}
 
 \author{Carsten Bruns
         \& Jakob Toft% <-this % stops a space
@@ -60,12 +60,52 @@ High-Speed Data Links, Low-Power 10Gb/s link.
 \IEEEdisplaynotcompsoctitleabstractindextext
 \IEEEpeerreviewmaketitle
 
+\tableofcontents
+\listoffigures
+\listoftables
+
+\cleardoublepage
+\section{Introduction}
+\input{choice}
+
+\cleardoublepage
+\section{Design choices and initial investigation of channel}
+
+\input{equalization_choice}
+\input{clock}
+\input{worst_case}
+
+\cleardoublepage
+\section{TX design}
 
 \input{tx_topologies}
 \input{tx_schematics}
 \input{tx_output}
 \input{tx_tuning}
 \input{tx_power}
+
+\cleardoublepage
+\section{RX design}
+
+\input{topologies}
+\input{schematics}
+\input{simulations}
+\input{tuning}
+\input{power}
+\input{spec_table}
+
+
+\cleardoublepage
+\section{Link design and system tuning}
+\input{final_link}
+\input{final_optimizations}
+\input{final_performance}
+
+
+\section{Conclusion}
+
+
+
 %\input{performance}
 
 

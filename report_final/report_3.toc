@@ -1,0 +1,26 @@
+\contentsline {section}{\numberline {1}Introduction}{3}
+\contentsline {section}{\numberline {2}Design choices and initial investigation of channel}{4}
+\contentsline {subsection}{\numberline {2.1}Choice of project}{4}
+\contentsline {subsection}{\numberline {2.2}Choice of equalization techniques and resolution}{4}
+\contentsline {subsection}{\numberline {2.3}Choice of clocking rate}{4}
+\contentsline {subsection}{\numberline {2.4}Worst-case bit patterns}{5}
+\contentsline {section}{\numberline {3}TX design}{9}
+\contentsline {subsection}{\numberline {3.1}Choice of the circuit topology}{9}
+\contentsline {subsection}{\numberline {3.2}Transmitter schematics}{10}
+\contentsline {subsection}{\numberline {3.3}Output signals for different input signals}{13}
+\contentsline {subsection}{\numberline {3.4}Impedance tuning}{16}
+\contentsline {subsection}{\numberline {3.5}Power consumption}{17}
+\contentsline {section}{\numberline {4}RX design}{18}
+\contentsline {subsection}{\numberline {4.1}Choice of RX topology}{18}
+\contentsline {subsection}{\numberline {4.2}Receiver schematics}{19}
+\contentsline {subsection}{\numberline {4.3}Simulations}{23}
+\contentsline {subsection}{\numberline {4.4}Impedance and offset tuning}{26}
+\contentsline {subsection}{\numberline {4.5}Power consumption}{27}
+\contentsline {subsection}{\numberline {4.6}Receiver specifications table }{28}
+\contentsline {section}{\numberline {5}Link design and system tuning}{29}
+\contentsline {subsection}{\numberline {5.1}Final link}{29}
+\contentsline {subsection}{\numberline {5.2}Link optimizations}{29}
+\contentsline {subsection}{\numberline {5.3}Performance results of final link}{29}
+\contentsline {section}{\numberline {6}Conclusion}{29}
+\contentsline {section}{\numberline {7}Bibliography}{30}
+\contentsline {section}{References}{30}
