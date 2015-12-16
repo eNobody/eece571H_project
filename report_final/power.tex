@@ -1,20 +1,20 @@
 \subsection{Power consumption}
-The power consumption at \unit[10]{Gb/s} PRBS15 data and \unit[1]{V} power supply is shown in table \ref{tab:power_consumption}. The complete receiver consists of two receiver slices, each of them of VOA, strongARM and RS-FlipFlop (see section \ref{sec:rx_schematics}).
+The power consumption at \unit[10]{Gb/s} PRBS15 data and \unit[1]{V} power supply as well as at \unit[2]{Gb/s} and \unit[0.7]{V} power supply is shown in table \ref{tab:power_consumption_rx}. The complete receiver consists of two receiver slices, each of them of VOA, strongARM and RS-FlipFlop (see section \ref{sec:rx_schematics}).
 
-\begin{table}[H]
+\begin{table}[H] %TODO add values for 2GB/s 0.7V
   \centering
-  \begin{tabular}{l|l}
-    component & consumed power\\
+  \begin{tabular}{l|l|l}
+    component & \unit[10]{Gb/s} at \unit[1]{V} & \unit[2]{Gb/s} at \unit[0.7]{V}\\
     \hline
-    complete receiver & \unit[2104]{\uW}\\
-    clock buffers & \unit[1814]{\uW}\\
-    receiver slice & \unit[136,3]{\uW}\\
-    VOA & \unit[32,58]{\uW}\\
-    strongARM & \unit[46,07]{\uW}\\
-    RS-FlipFlop & \unit[57,66]{\uW}\\
+    complete receiver &  \unit[2217]{\uW}\\
+    clock buffers & \unit[1888]{\uW}\\
+    receiver slice & \unit[164,67]{\uW}\\
+    VOA & \unit[49,54]{\uW}\\
+    strongARM & \unit[42,27]{\uW}\\
+    RS-FlipFlop & \unit[72,86]{\uW}\\
   \end{tabular}
-  \caption{Receiver power consumption at \unit[10]{Gb/s} PRBS15 data and \unit[1]{V} power supply}
-  \label{tab:power_consumption}
+  \caption{Receiver power consumption with PRBS15 data}
+  \label{tab:power_consumption_rx}
 \end{table}
 
-As it can be observed the total power consumption of the receiver is 2.104mA, which at 1V gives a power consumption of 2.104mW, resulting in a energy consumption of 2.104mJ per second. This gives that the energy per bit is 0.2104 pJ per bit, it seems like the power consumption of receiver is pretty decent and that future work, in reducing power consumption of the link, should be done on the transmitter.
+As it can be observed the total power consumption of the receiver is 2.217mA, which at 1V gives a power consumption of 2.217mW, resulting in a energy consumption of 2.217mJ per second. This gives that the energy per bit is 0.2217 pJ per bit, it seems like the power consumption of receiver is pretty decent and that future work, in reducing power consumption of the link, should be done on the transmitter.

@@ -10,7 +10,6 @@ From the RS-flipflop we went backwards in the receiver, sizing the strongARM-lat
 
 The sizing was done for one slice, and the second slice will use the same parameters, as they should experience the same load.
 
-%TODO transistor scaling
 The final used transistor scalings and control voltages are shown in table \ref{tab:scaling}.
 
 \begin{table}[H]
@@ -23,12 +22,13 @@ The final used transistor scalings and control voltages are shown in table \ref{
     termination nmos switch & \unit[20]{\um}\\
     \hline
     track-and-hold pmos & \unit[20]{\um}\\
+    track-and-hold capacitor & \unit[20]{fF}\\
     \hline
     VOA differential nmos & \unit[2]{\um}\\
     VOA nmos current source & \unit[16]{\um}\\
     VOA load pmos (smallest) & \unit[400]{nm}\\
     VOA pctl pass & \unit[10]{\um}\\
-    pctl & \unit[757]{mV}\\
+    pctl & \unit[Vdd - 243]{mV}\\
     nctl & \unit[320]{mV}\\
     \hline
     strongARM clk nmos & \unit[2]{\um}\\
@@ -40,6 +40,9 @@ The final used transistor scalings and control voltages are shown in table \ref{
     \hline
     RS-flipflop nmos & \unit[2]{\um}\\
     RS-flipflop pmos & \unit[2]{\um}\\
+    \hline
+    clock-buffer nmos & \unit[$(4^k)*4$]{\um}\\
+    clock-buffer pmos & \unit[$(4^k)*8$]{\um}\\
   \end{tabular}
   \caption{Used transistor sizes in the RX circuits}
   \label{tab:scaling}
@@ -61,7 +64,7 @@ The final used transistor scalings and control voltages are shown in table \ref{
 
 \begin{figure}[H]
   \centering
-  {\includegraphics[scale=0.4]{schematics/receiver_slice.png}}
+  {\includegraphics[scale=0.25]{schematics/receiver_slice.png}}
   \caption{Receiver slice circuit}
   \label{fig:receiver_slice}
 \end{figure}

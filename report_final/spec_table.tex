@@ -1,7 +1,15 @@
-\subsection{Receiver specifications table }
+\subsection{Receiver specifications }
 
+The sensivity of the receiver can be determined by the CDF/PDF simulation. The PDF simulation result is close to a gaussian curve with $\sigma \approx \unit[0,676]{mV}$. The minimal offset voltage (LSB of code) could be seen to be \unit[0,9]{mV}. Sensivity of the receiver is determined by the following equation:
+\[
+ Vsen_{pp} = 2*Q*|Vn_T| + |V_{OS_T}| + |\delta V_{met,i}| + |V_{hyst}| + |PSSR*V_{psn}| + |CMSR*V_{cmn}|
+\]
+In this project we only consider the first two terms, the input referred RX noise and the LSB of the voltage offset. For a BER of $10^{-12}$ results in $Q\approx 7$ and we get:
+\[
+ Vsen_{pp} \approx \unit[10,366]{mV}
+\]
+Note that hysteresis seems to be significant in our design (we had to scale up the noise to be able to determine a CDF) and should therefore be included in this calculation.\\\\
 In table \ref{tab:specifications} the specifications for the receiver is listed
-
 
 \begin{table}[H]
   \centering
@@ -18,5 +26,3 @@ In table \ref{tab:specifications} the specifications for the receiver is listed
 \end{table}
 
 The resolution of the Impedance and Offset both have a maximum and minimum value in the table, as some steps are smaller than others, due to the tuning not being perfectly linear, the max value do give an indication of the worst case scenario.
-
-%TODO table with performance/specs
