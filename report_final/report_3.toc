@@ -16,7 +16,7 @@
 \contentsline {subsection}{\numberline {4.3}Simulations}{22}
 \contentsline {subsection}{\numberline {4.4}Impedance and offset tuning}{25}
 \contentsline {subsection}{\numberline {4.5}Power consumption}{26}
-\contentsline {subsection}{\numberline {4.6}Receiver specifications table }{27}
+\contentsline {subsection}{\numberline {4.6}Receiver specifications }{27}
 \contentsline {section}{\numberline {5}Link design and system tuning}{28}
 \contentsline {subsection}{\numberline {5.1}Final link}{28}
 \contentsline {subsection}{\numberline {5.2}Link optimizations}{28}
