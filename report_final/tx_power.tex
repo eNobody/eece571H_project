@@ -2,18 +2,18 @@
 
 The power consumption at \unit[10]{Gb/s} PRBS15 data and \unit[1]{V} power supply as well as at \unit[2]{Gb/s} and \unit[0.7]{V} power supply is shown in table \ref{tab:power_consumption_tx}. The different power consumption between main and post cursors slices comes from the different input signal shapes as the post cursor is driven by the second flipflops wheras the main cursor slices are driven by the first flipflops for odd and even bits. The circuits of both slices are identical.
 
-\begin{table}[H] %TODO add values for 2GB/s 0.7V
+\begin{table}[H]
   \centering %TODO missing value
   \begin{tabular}{l|l|l}
     component & \unit[10]{Gb/s} at \unit[1]{V} & \unit[2]{Gb/s} at \unit[0.7]{V}\\
     \hline
-    complete transmitter &  \unit[]{\uW}\\
-    clock buffers & \unit[]{\uW}\\
-    tap flipflops (used as pre-drivers) & \unit[3610]{\uW}\\
-    main cursor slice &  \unit[1239]{\uW}\\
-    main slice (inactive) &  \unit[1,548]{\uW}\\
-    post cursor slice &  \unit[1189]{\uW}\\
-    post slice (inactive) &  \unit[1,802]{\uW}\\      
+    complete transmitter &  \unit[]{\uW} & \unit[5720]{\uW}\\
+    clock buffers & \unit[]{\uW} &  \unit[2221]{\uW}\\
+    tap flipflops (used as pre-drivers) & \unit[3610]{\uW} &  \unit[390]{\uW}\\
+    main cursor slice &  \unit[1239]{\uW} &  \unit[377]{\uW}\\
+    main slice (inactive) &  \unit[1,548]{\uW} &  \unit[0,4]{\uW}\\
+    post cursor slice &  \unit[1189]{\uW} &  \unit[423]{\uW}\\
+    post slice (inactive) &  \unit[1,802]{\uW} &  \unit[0,4]{\uW}\\      
   \end{tabular}
   \caption{Transmitter power consumption with PRBS15 data}
   \label{tab:power_consumption_tx}
