@@ -1,3 +1,12 @@
-\subsection{Choice of project}
+For this project we had two options for a communication link to design, we chose to design, analyse and simulate a Low-power, supply-scalable, I/O Link operating at 2-10Gb/s.
 
-\IEEEPARstart{F}{or} this project we have chosen to design, analyse and simulate a Low-power supply-scalable I/O Link operating at 2-10Gb/s.
+The goals for the link is to meet the specifications listed below:
+
+\begin{itemize}
+\item Supply-scalable from 0.7 to 1.0V
+\item Link bandwidth 2-10Gb/s
+\item 2-tap voltage-mode TX driver
+\item Have a maximum energy consumption of 1pJ/b at 10Gb/s
+\end{itemize}
+
+In order to design this link and implement it in the Cadence Virtuoso software package the development was split up into four parts, initial design choices and measurements of the channel, design of TX driver, design of RX circuitry, and finally a complete link where the TX driver, channel and RX were connected and adjusted to meet the specifications.

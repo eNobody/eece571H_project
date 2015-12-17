@@ -1,18 +1,18 @@
 \contentsline {figure}{\numberline {1}{\ignorespaces Eye diagrams for \unit [10]{Gb/s} and \unit [$\pm $1]{V} TX signal swing\relax }}{5}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {no equalization}}}{5}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {TXPE, one post cursor}}}{5}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {TXPE, two post cursors}}}{5}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {TXPE, one post and one pre cursor}}}{5}
 \contentsline {figure}{\numberline {2}{\ignorespaces Eye diagrams for \unit [2]{Gb/s} and \unit [$\pm $0.7]{V} TX signal swing\relax }}{6}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {no equalization}}}{6}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {TXPE, one post cursor}}}{6}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {TXPE, two post cursors}}}{6}
 \contentsline {figure}{\numberline {3}{\ignorespaces Use of different clock-rates in different implementations, source: \nobreakspace {}\cite {rajesh2011a}\relax }}{7}
 \contentsline {figure}{\numberline {4}{\ignorespaces Distribution of different clock-rates in different technologies and their FOM, source: \nobreakspace {}\cite {rajesh2011a}\relax }}{7}
 \contentsline {figure}{\numberline {5}{\ignorespaces Truncated pulse reponse of the channel, with the cursors marked as 'o's.\relax }}{8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {no equalization}}}{8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {TXPE, one post cursor}}}{8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {TXPE, two post cursors}}}{8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {TXPE, one post and one pre cursor}}}{8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {no equalization}}}{8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {TXPE, one post cursor}}}{8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {TXPE, two post cursors}}}{8}
 \contentsline {figure}{\numberline {6}{\ignorespaces Worst-case bit pattern for transmitting a '1' on the transmission line, the cursor is the underlined '1' in the pattern.\relax }}{8}
 \contentsline {figure}{\numberline {7}{\ignorespaces Transmitter top level topology\relax }}{9}
-\contentsline {figure}{\numberline {8}{\ignorespaces Transmitter top level topology from \nobreakspace {}\cite {menolfi2007a}\relax }}{10}
+\contentsline {figure}{\numberline {8}{\ignorespaces Transmitter top level topology from \nobreakspace {}\cite {menolfi2007a}\relax }}{9}
 \contentsline {figure}{\numberline {9}{\ignorespaces Half-rate slice topology from \nobreakspace {}\cite {menolfi2007a}\relax }}{10}
 \contentsline {figure}{\numberline {10}{\ignorespaces Transmitter top level circuit\relax }}{11}
 \contentsline {figure}{\numberline {11}{\ignorespaces D-Flipflop\relax }}{11}

@@ -1,5 +1,41 @@
 \subsection{Performance results of final link}
 
-The link simulated without any bit errors over \unit[5000]{UI} at \unit[2]{Gb/s} at \unit[1]{V}. For \unit[10]{Gb/s} at \unit[0.7]{V} we got 43 bit errors on the 5000 bits woth is clearly not sufficient. We assume that this is still the common mode problem of the track-and-hold described in section \ref{sec:link_opt} and that increasing the track-and.hold capacitor size would resolve these errors. However, due to our limited disk space quota we were not able to run more simulations on that and solve the problem.
+The link simulated without any bit errors over \unit[5000]{UI} at \unit[2]{Gb/s} at \unit[1]{V}. For \unit[10]{Gb/s} at \unit[0.7]{V} we got 43 bit errors on the 5000 bits which clearly is a rather high BER, and not acceptable for a link like this. We assume that this is still the common mode problem of the track-and-hold described in section \ref{sec:link_opt} and that increasing the track-and.hold capacitor size would resolve these errors. However, due to our limited disk space quota we were not able to run more simulations on that and solve the problem.
 
 %TODO table with performance/specs
+
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{l l|r|r|r|l}
+ Unit  & Parameter & Min. & Max. & Avg. & Unit \\
+    \hline
+    & & & & &\\
+\textbf{TX} & & & & &\\
+&	Slice impedance & 400 &  &  & $\Omega$\\
+&	No. of tap slices & 3 &  & 2 & \\
+&	No. of cursor slices & 9 &  & 6 & \\
+&	Output impedance range & 33.33 & 400 & 50 & $\Omega$\\
+&	Power consumption at 2Gb/s 0.7V &  &  & 5,720 & $\mu$W\\
+&	Power consumption at 10Gb/s 1.0V &  &  & 37,933 & $\mu$W\\
+
+\textbf{RX} & & & & &\\
+&	Termination impedance & 70 & 130 & 100 & $\Omega$\\
+&	Impedance resolution & 0.0087 & 2.289 & 0.858 & $\Omega$\\
+&	VOA offset & -100 & 100 & 0.0 & mV\\
+&	Offset resolution & 2.55 & 8.03 & 3.19 & mV\\
+&	Power consumption at 2Gb/s 0.7V &  &  & 223  & $\mu$W\\
+&	Power consumption at 10Gb/s 1.0V &&  &  2,217  & $\mu$W\\
+
+\textbf{Link} & & & & &\\
+&	Link speed & 2 & 10 &  & Gb/s \\
+&	Supply voltage  & 0.7 & 1.0 &  & V\\
+&	BER at 10Gb/s  &  &  & 0.0086 & \\
+&	Power consumption at 2Gb/s 0.7V &  &  & 5,943 & $\mu$W\\
+&	Power consumption at 10Gb/s 1.0V &  &  & 40,150 & $\mu$W\\
+&   Energy per bit at 2Gb/s &  & & 2.9715 & pJ \\
+&   Energy per bit at 10Gb/s &  & & 4.015 & pJ \\
+  \end{tabular}
+  \caption{Partial specification table for the receiver}
+  \label{tab:specifications}
+\end{table}
