@@ -97,13 +97,12 @@ High-Speed Data Links, Low-Power 10Gb/s link.
 
 \cleardoublepage
 \section{Link design and system tuning}
-\input{final_link}
 \input{final_optimizations}
 \input{final_performance}
 
 
 \section{Conclusion}
-In this project we applied a lot of the material that we learned in the course over the time of the term. The result was a functional link implementation in Cadence Virtuoso where we obtained a link capable of running at different voltages in the range of 0.7-1.0V at different speeds in the range of 2-10Gb/s. The link had a BER of 0.0086 for a 5000UI simulation at 10Gb/s with a 1.0V power supply. The energy consumption of the link was however a factor of 4 above the desired goal of 1pJ/bit, looking at where the power was consumed it is clear that the transmitter of our link needs to be redesigned. It is evident that it is or clock distribution that consumes a lot of power, as well as the flip-flops that are used as pre-drivers for the TX driver, the problem probably lies in our choice of clock distribution as well as our scaling of the entire TX side of the link.
+In this project we applied a lot of the material that we learned in the course over the time of the term. The result was a functional link implementation in Cadence Virtuoso where we obtained a link capable of running at different voltages in the range of 0.7-1.0V at different speeds in the range of 2-10Gb/s. The link had a BER of 0.0086 for a 5000UI simulation at 10Gb/s with a 1.0V power supply. The energy consumption of the link was however a factor of 4 above the desired goal of 1pJ/bit, looking at where the power was consumed it is clear that the transmitter of our link needs to be redesigned. It is evident that it is our clock distribution that consumes a lot of power, as well as the flip-flops that are used as pre-drivers for the TX driver, the problem probably lies in our choice of clock distribution as well as our scaling of the entire TX side of the link.
 
 
 %\input{performance}
