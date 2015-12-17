@@ -7,7 +7,7 @@ The final used transistor scalings are shown in table \ref{tab:scaling_tx}.
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{l|l|l}
+  \begin{tabular}{l|r|r}
     type & nmos size & pmos size\\
     \hline
     output driver & \unit[8]{\um} & \unit[24]{\um}\\
@@ -15,7 +15,7 @@ The final used transistor scalings are shown in table \ref{tab:scaling_tx}.
     slice driver gates NOR & \unit[1]{\um} & \unit[4]{\um}\\
     enable inverter & \unit[200]{nm} & \unit[400]{nm}\\
     flipflop & \unit[6]{\um} & \unit[12]{\um}\\
-    clock-buffer & \unit[$(4^k)*4$]{\um} & \unit[$(4^k)*8$]{\um}\\
+    clock-buffer & \unit[$(4^k) \cdot 4$]{\um} & \unit[$(4^k) \cdot 8$]{\um}\\
   \end{tabular}
   \caption{Used transistor sizes in the TX circuit}
   \label{tab:scaling_tx}

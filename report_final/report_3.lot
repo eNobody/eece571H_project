@@ -1,6 +1,7 @@
 \contentsline {table}{\numberline {1}{\ignorespaces Used transistor sizes in the TX circuit\relax }}{10}
 \contentsline {table}{\numberline {2}{\ignorespaces Transmitter power consumption with PRBS15 data\relax }}{17}
-\contentsline {table}{\numberline {3}{\ignorespaces Used transistor sizes in the RX circuits\relax }}{19}
-\contentsline {table}{\numberline {4}{\ignorespaces Receiver power consumption with PRBS15 data\relax }}{28}
-\contentsline {table}{\numberline {5}{\ignorespaces Partial specification table for the receiver\relax }}{28}
-\contentsline {table}{\numberline {6}{\ignorespaces Specification table of the link\relax }}{30}
+\contentsline {table}{\numberline {3}{\ignorespaces Table over the specifications of the TX part of the link.\relax }}{17}
+\contentsline {table}{\numberline {4}{\ignorespaces Used transistor sizes in the RX circuits\relax }}{19}
+\contentsline {table}{\numberline {5}{\ignorespaces Receiver power consumption with PRBS15 data\relax }}{28}
+\contentsline {table}{\numberline {6}{\ignorespaces Partial specification table for the receiver\relax }}{28}
+\contentsline {table}{\numberline {7}{\ignorespaces Specification table of the link\relax }}{30}
